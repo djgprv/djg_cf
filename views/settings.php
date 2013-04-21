@@ -82,7 +82,7 @@
 			</tr>
             <tr class="subjects_area">
                 <td class="label">
-					<?php echo __('Subjects'); ?>
+					<?php echo __('Subjects:'); ?>
 					<a href="#" class="add_topic"><img src="<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/images/16_add.png" alt="<?php echo __('add subject'); ?>" title="<?php echo __('add subject'); ?>" /></a>
 				</td>
                 <td class="field">
