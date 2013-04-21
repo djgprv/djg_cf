@@ -8,6 +8,8 @@
 		'Your Email:' => 'Ваш e-mail:',
 		'The Subject:' => 'Тема сообщения:',
 		'The Message:' => 'Сообщение:',
+		'The Captcha:' => 'The Captcha:', // 1.1.2
+		'captcha image' => 'captcha', // 1.1.2a
 		'Send The Message' => 'Отправить сообщение',
 		'Choose the topic' => 'Выберите тему',
 		'I don\'t talk to strangers.' => 'Не указано имя',

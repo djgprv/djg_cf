@@ -138,7 +138,7 @@ function djg_cf()
 	if($captcha == 1): ?>
 	<label for="captcha"><?php echo __('The Captcha:'); ?></label>
 	<input id="captcha" class="captcha" type="text" autocomplete="off"  tabindex="5" maxlength="6" name="captcha" />
-	<img id="djg_cf_captchaimage" src="" alt="captcha image" width="80" height="30" />
+	<img id="djg_cf_captchaimage" src="" alt="<?php echo __('captcha image'); ?>" title="<?php echo __('captcha image'); ?>" width="80" height="30" />
 	<?php endif; ?>
 	<label for="submit" style="clear: both;" ></label>
 	<button type="submit" name="submit"><?php echo __('Send The Message'); ?></button>

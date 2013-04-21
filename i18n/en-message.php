@@ -9,6 +9,7 @@
 		'The Subject:' => 'The Subject:',
 		'The Message:' => 'The Message:',
 		'The Captcha:' => 'The Captcha:', // 1.1.2
+		'captcha image' => 'captcha image', // 1.1.2a
 		'Send The Message' => 'Send The Message',
 		'Select a subject' => 'Select a subject',  // 1.1.2
 		'Choose the topic' => 'Choose the topic',
