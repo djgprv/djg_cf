@@ -35,3 +35,4 @@
 ?>
 <p class="button"><a href="<?php echo get_url('plugin/djg_cf/settings'); ?>"><img src="<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/images/settings.png" align="middle" alt="settings icon" /> <?php echo __('Settings'); ?></a></p>
 <p class="button"><a href="<?php echo get_url('plugin/djg_cf/documentation/'); ?>"><img src="<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/images/documentation.png" align="middle" alt="documentation icon" /> <?php echo __('Documentation'); ?></a></p>
+<p class="kreacjawww"><span><a href="http://kreacjawww.pl/">Micha³ Uchnast</a></span> - djg cf plugin</p>
