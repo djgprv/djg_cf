@@ -26,7 +26,7 @@
 /**
  * The djg_cf plugin
 
- * @author Micha³ Uchnast <djgprv@gmail.com>,
+ * @author Michaï¿½ Uchnast <djgprv@gmail.com>,
  * @copyright kreacjawww.pl
  * @license http://www.gnu.org/licenses/gpl.html GPLv3 license
  */
@@ -51,9 +51,9 @@
                 <td class="help"><?php echo __('Subject prefix <br />for example: <strong>"Message frow www, topic: "</strong>'); ?></td>
             </tr>
 			<tr>
-                <td class="label"><label for="appendCss"><?php echo __('Auto append css'); ?>: </label></td>
+                <td class="label"><label for="appendcss"><?php echo __('Auto append css'); ?>: </label></td>
                 <td class="field">
-					<select id="append" name="settings[appendCss]">
+					<select id="appendcss" name="settings[appendCss]">
 						<option value="1" <?php if($settings['appendCss'] == "1") echo 'selected="selected"' ?>><?php echo __('Yes'); ?></option>
 						<option value="0" <?php if($settings['appendCss'] == "0") echo 'selected="selected"' ?>><?php echo __('No'); ?></option>
 					</select>	
