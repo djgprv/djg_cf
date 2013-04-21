@@ -2,7 +2,7 @@
 $settings = array(
     'emailAdress' => 'admin_mail@localhost.com',
 	'subjectPrefix' => 'Message frow www, topic: ',
-	'appendCssE'   => '1',
+	'appendCss'   => '1',
     'subject' => '1',
 	'captcha'  => '1',
 	'subjects' => 'subject 1#subject 2#other subject'
