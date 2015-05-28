@@ -79,7 +79,7 @@ class DjgCfController extends PluginController {
             Flash::set('error', 'An error has occurred while trying to save the settings.');
         redirect(get_url('plugin/djg_cf/settings'));
 	}
-	function sesja()
+	function session()
 	{
 		if( !isset($_GET['captcha']) or (!$_SESSION['captcha_id']) ): 
 			echo 'false'; 

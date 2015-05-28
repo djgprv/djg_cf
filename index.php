@@ -33,7 +33,7 @@ Plugin::setInfos(array(
     'id'			=> 'djg_cf',
     'title'			=> __('[djg] Contact form'),
     'description'	=> __('Ajax contact form'),
-    'version'		=> '1.1.2',
+    'version'		=> '1.1.3',
    	'license'		=> 'GPL',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',
@@ -44,7 +44,7 @@ Plugin::setInfos(array(
 	Plugin::addController('djg_cf', __('[djg] Contact form'), 'administrator', false);
 	Dispatcher::addRoute(array(
 	'/djg_cf_send_email.php' => '/plugin/djg_cf/djg_cf_send_email',
-	'/djg_cf_sesja.php' => '/plugin/djg_cf/sesja'
+	'/djg_cf_session.php' => '/plugin/djg_cf/session'
 ));
 
 function djg_cf()
@@ -64,8 +64,8 @@ function djg_cf()
 		<?php endif; ?>
 		$('#djg_cf').show();
 		$('#djg_cf_jq_test').hide();
-		$('#djg_cf_captchaimage').attr("src", "<?php echo rtrim(URL_PUBLIC,'/').(USE_MOD_REWRITE ? '/': '/?/'); ?>wolf/plugins/djg_cf/captcha/image.php?" + new Date().getTime());
-		$('#djg_cf_captchaimage').click(function() {$(this).attr("src", "<?php echo rtrim(URL_PUBLIC,'/').(USE_MOD_REWRITE ? '/': '/?/'); ?>wolf/plugins/djg_cf/captcha/image.php?" + new Date().getTime());});
+		$('#djg_cf_captchaimage').attr("src", "<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/captcha/image.php?" + new Date().getTime());
+		$('#djg_cf_captchaimage').click(function() {$(this).attr("src", "<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/captcha/image.php?" + new Date().getTime());});
 		$("#djg_cf").validate({
 			submitHandler: function() {
 				var $form = $('#djg_cf');
@@ -99,7 +99,7 @@ function djg_cf()
 					email: {required: true, email:true},
 					subject: {required: true},
 					message: {required: true},
-					captcha: {required: true, remote: '<?php echo rtrim(URL_PUBLIC,'/').(USE_MOD_REWRITE ? '/': '/?/'); ?>djg_cf_sesja.php'}		
+					captcha: {required: true, remote: '<?php echo rtrim(URL_PUBLIC,'/').(USE_MOD_REWRITE ? '/': '/?/'); ?>djg_cf_session.php'}		
 				},
 				messages: {
 					name: "<?php echo __('I don\'t talk to strangers.');?>",
@@ -128,7 +128,7 @@ function djg_cf()
 	array_unshift($subjects, __('Select a subject'));
 	foreach ($subjects as $subject_id => $subject_value):
       $selected = ($subject_id == $subject_value) ? ' selected="selected"' : '';
-      echo '<option value="' . $subject_id . '"' . $selected . '>' . $subject_value . '</option>' . PHP_EOL;
+      echo '<option value="' . $subject_value . '"' . $selected . '>' . $subject_value . '</option>' . PHP_EOL;
     endforeach;
     ?>
 	</select>
