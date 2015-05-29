@@ -40,6 +40,7 @@ if (!defined('IN_CMS')) { exit(); }
 <li>1.1.0 - new validate (jQuery Validation Plugin 1.9.0), captcha refresh on click, form W3C Validate, add update_urll</li>
 <li>1.1.1 - automatic append css to head in fronted, cleanurl and ? compatible</li>
 <li>1.1.3 - subject as value not subject id (thanks for David)</li>
+<li>1.1.3a - auto append jQuery validate function</li>
 </ul>
 
 <p><strong>Translations</strong></p>
