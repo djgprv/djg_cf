@@ -33,7 +33,7 @@ Plugin::setInfos(array(
     'id'			=> 'djg_cf',
     'title'			=> __('[djg] Contact form'),
     'description'	=> __('Ajax contact form'),
-    'version'		=> '1.1.3a',
+    'version'		=> '1.1.3b',
    	'license'		=> 'GPL',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',
@@ -135,6 +135,7 @@ function djg_cf()
 	<label for="email"><?php echo __('Your Email:'); ?></label>
 	<input id="email" type="text" name="email" tabindex="2" value="" autocomplete="off" title="<?php echo __('Your Email:'); ?>" />
 	<!-- subjects -->
+	<?php if($subject): ?>
 	<label for="subject"><?php echo __('The Subject:'); ?></label>
 	<select name="subject" id="subject">
 	<?php
@@ -145,6 +146,7 @@ function djg_cf()
     endforeach;
     ?>
 	</select>
+	<?php endif; ?>
 	<label for="message"><?php echo __('The Message:'); ?></label>
 	<textarea id="message" tabindex="4" rows="4" cols="10" name="message"></textarea>
     <?php /* captcha */ 

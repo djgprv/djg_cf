@@ -41,6 +41,7 @@ if (!defined('IN_CMS')) { exit(); }
 <li>1.1.1 - automatic append css to head in fronted, cleanurl and ? compatible</li>
 <li>1.1.3 - subject as value not subject id (thanks for David)</li>
 <li>1.1.3a - auto append jQuery validate function</li>
+<li>1.1.3b - fix subject condition</li>
 </ul>
 
 <p><strong>Translations</strong></p>
