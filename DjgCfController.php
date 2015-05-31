@@ -41,8 +41,9 @@ class DjgCfController extends PluginController {
         $this->documentation();
     }
 
-    public function documentation() {
-        $this->display('djg_cf/views/documentation');
+	public function documentation() {
+		$content = Parsedown::instance()->parse(file_get_contents(PLUGINS_ROOT.DS.'djg_cf'.DS.'README.md'));
+        $this->display('djg_cf/views/documentation', array('content'=>$content));
     }
 
     function settings() {

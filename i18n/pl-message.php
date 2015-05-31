@@ -8,7 +8,7 @@
 		'Your Email:' => 'Adres e-mail:',
 		'The Subject:' => 'Temat:',
 		'The Message:' => 'Treść:',
-		'The Captcha:' => 'The Captcha:', // 1.1.2
+		'The Captcha:' => 'Captcha - podaj wynik:', // 1.1.2
 		'captcha image' => 'captcha', // 1.1.2a
 		'Send The Message' => 'Wyślij wiadomość',
 		'Choose the topic' => 'Wybierz temat',

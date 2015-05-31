@@ -33,7 +33,7 @@ Plugin::setInfos(array(
     'id'			=> 'djg_cf',
     'title'			=> __('[djg] Contact form'),
     'description'	=> __('Ajax contact form'),
-    'version'		=> '1.1.3b',
+    'version'		=> '1.1.3c',
    	'license'		=> 'GPL',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',
@@ -41,6 +41,9 @@ Plugin::setInfos(array(
     'require_wolf_version' => '0.7.3',
 	'type'			=> 'both'
 ));
+	//	load plugin classes into the system
+	AutoLoader::addFolder(dirname(__FILE__) . '/models');
+
 	Plugin::addController('djg_cf', __('[djg] Contact form'), 'administrator', false);
 	Dispatcher::addRoute(array(
 	'/djg_cf_send_email.php' => '/plugin/djg_cf/djg_cf_send_email',
@@ -155,9 +158,9 @@ function djg_cf()
 	<input id="captcha" class="captcha" type="text" autocomplete="off"  tabindex="5" maxlength="6" name="captcha" />
 	<img id="djg_cf_captchaimage" src="" alt="<?php echo __('captcha image'); ?>" title="<?php echo __('captcha image'); ?>" width="80" height="30" />
 	<?php endif; ?>
+	</fieldset>
 	<label for="submit" style="clear: both;" ></label>
 	<button type="submit" name="submit"><?php echo __('Send The Message'); ?></button>
-	</fieldset>
 	<div style="display:none;" class="mail_success msg_success"><?php echo __('Thank you. The mailman is on his way.'); ?></div>
 	<div style="display:none;" class="mail_fail msg_error"><?php echo __('Sorry, don\'t know what happened. Try later.'); ?></div>
 	</form>	
