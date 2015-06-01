@@ -33,7 +33,7 @@ Plugin::setInfos(array(
     'id'			=> 'djg_cf',
     'title'			=> __('[djg] Contact form'),
     'description'	=> __('Ajax contact form'),
-    'version'		=> '1.1.3c',
+    'version'		=> '1.1.3d',
    	'license'		=> 'GPL',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',
@@ -156,7 +156,7 @@ function djg_cf()
 	if($captcha == 1): ?>
 	<label for="captcha"><?php echo __('The Captcha:'); ?></label>
 	<input id="captcha" class="captcha" type="text" autocomplete="off"  tabindex="5" maxlength="6" name="captcha" />
-	<img id="djg_cf_captchaimage" src="" alt="<?php echo __('captcha image'); ?>" title="<?php echo __('captcha image'); ?>" width="80" height="30" />
+	<img id="djg_cf_captchaimage" src="<?php echo URL_PUBLIC; ?>wolf/plugins/djg_cf/captcha/image.php" alt="<?php echo __('captcha image'); ?>" title="<?php echo __('captcha image'); ?>" width="80" height="30">
 	<?php endif; ?>
 	</fieldset>
 	<label for="submit" style="clear: both;" ></label>
