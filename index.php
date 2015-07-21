@@ -33,7 +33,7 @@ Plugin::setInfos(array(
     'id'			=> 'djg_cf',
     'title'			=> __('[djg] Contact form'),
     'description'	=> __('Ajax contact form'),
-    'version'		=> '1.1.3d',
+    'version'		=> '1.1.3e',
    	'license'		=> 'GPL',
 	'author'		=>	'Michał Uchnast',
 	'website'		=>	'http://www.kreacjawww.pl/',

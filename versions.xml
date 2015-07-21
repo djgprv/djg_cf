@@ -2,7 +2,7 @@
 <wolf-plugins>
     <wolf-plugin>
         <id>djg_cf</id>
-        <version>1.1.3d</version>
+        <version>1.1.3e</version>
         <status>beta</status>
     </wolf-plugin>
 </wolf-plugins>
